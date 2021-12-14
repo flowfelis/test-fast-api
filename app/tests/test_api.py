@@ -40,7 +40,7 @@ def test_list_of_cars(client: TestClient, session_and_db_user: Tuple[Session, DB
     session, db_user = session_and_db_user
 
     # insert 5 new cars
-    run_sql_from_file("./test_scripts/five_new_cars.sql", session)
+    run_sql_from_file("../test_scripts/five_new_cars.sql", session)
 
     response = client.get("/car")
 

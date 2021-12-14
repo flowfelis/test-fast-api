@@ -20,6 +20,7 @@ class DBUser:
     db_password: str = password
     db_host = "localhost"
     db_name = "fastapi_utils"
+    db_port = 5432
     username: str = "username@xxx.com"
     id: int = 1
     company_id: int = 1
